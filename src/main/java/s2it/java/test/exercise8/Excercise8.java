@@ -78,7 +78,7 @@ public final class Excercise8 {
         	}
         }
         
-        return l3.size() < Integer.MAX_VALUE ? l3 : Collections.emptyList();
+        return l3.size() <= Integer.MAX_VALUE ? l3 : Collections.emptyList();
 	}
 
 	/**

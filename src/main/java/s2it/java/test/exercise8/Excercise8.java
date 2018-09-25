@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
  *     Desenvolva um algoritmo que atenda a todos os requisitos acima. 
  */
 public final class Excercise8 {
-
+	
 	/**
 	 * Funcao pura que somente transforma um Integer (int) criando 
 	 * uma List<Integer> com cada algarismos do Integer (int) original.
@@ -78,7 +78,7 @@ public final class Excercise8 {
         	}
         }
         
-        return l3;
+        return l3.size() < Integer.MAX_VALUE ? l3 : Collections.emptyList();
 	}
 
 	/**
@@ -132,7 +132,7 @@ public final class Excercise8 {
 		System.out.println("");
 
 		System.out.println("############# RESULTADO ############# ");
-		System.out.println(result);
+		System.out.println(result.isEmpty() ? -1 : result);
 		System.out.println("");
         
 		System.out.println("######### SOMA DO RESULTADO ######### ");
